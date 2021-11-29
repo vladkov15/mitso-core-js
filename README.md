@@ -1,17 +1,17 @@
 ## Задание
 Реализовать функции по разным темам Core JS. Есть девять модулей с разными задачами. Каждый модуль состоит из задач по заданной теме:
 
-- Strings
-- Numbers
-- Arrays
-- Date
-- Regexp
-- Objects
-- Promises
-- Conditions and Loops
-- Functions and Closures
+- [Strings](https://github.com/hardzeichyksiarhei/mitso-core-js/blob/main/src/01-strings-tasks.js)
+- [Numbers](https://github.com/hardzeichyksiarhei/mitso-core-js/blob/main/src/02-numbers-tasks.js)
+- [Arrays](https://github.com/hardzeichyksiarhei/mitso-core-js/blob/main/src/03-arrays-tasks.js)
+- [Date](https://github.com/hardzeichyksiarhei/mitso-core-js/blob/main/src/04-date-tasks.js)
+- [Regexp](https://github.com/hardzeichyksiarhei/mitso-core-js/blob/main/src/05-regex-tasks.js)
+- [Objects](https://github.com/hardzeichyksiarhei/mitso-core-js/blob/main/src/06-objects-tasks.js)
+- [Promises](https://github.com/hardzeichyksiarhei/mitso-core-js/blob/main/src/07-promises-tasks.js)
+- [Conditions and Loops](https://github.com/hardzeichyksiarhei/mitso-core-js/blob/main/src/08-conditions-n-loops-tasks.js)
+- [Functions and Closures](https://github.com/hardzeichyksiarhei/mitso-core-js/blob/main/src/09-functions-n-closures-tasks.js)
 
-Настоятельно рекомендуется активное использование [документации](https://developer.mozilla.org/en-US/)!
+Настоятельно рекомендуется активное использование **[документации](https://developer.mozilla.org/en-US/)**!
 
 ## Подготовка и тестирование
 
