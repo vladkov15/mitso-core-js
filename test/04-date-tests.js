@@ -139,4 +139,14 @@ describe('04-date-tasks', () => {
       });
     }
   );
+
+  it.optional('getDay should return the string representation corresponding date of the year as a string "Month, day"', () => {
+    assert.equal(tasks.getDay(15, false), 'January, 15');
+    assert.equal(tasks.getDay(41, false), 'February, 10');
+    assert.equal(tasks.getDay(59, false), 'February, 28');
+    assert.equal(tasks.getDay(60, false), 'March, 1');
+    assert.equal(tasks.getDay(60, true), 'February, 29');
+    assert.equal(tasks.getDay(365, false), 'December, 31');
+    assert.equal(tasks.getDay(366, true), 'December, 31');
+  });
 });
