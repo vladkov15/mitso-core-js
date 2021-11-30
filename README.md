@@ -1,5 +1,5 @@
 ## Задание
-Реализовать функции по разным темам Core JS. Есть девять модулей с разными задачами. Каждый модуль состоит из задач по заданной теме:
+Реализовать функции по разным темам Core JS. Есть десять модулей с разными задачами. Каждый модуль состоит из задач по заданной теме:
 
 - [Strings](https://github.com/hardzeichyksiarhei/mitso-core-js/blob/main/src/01-strings-tasks.js)
 - [Numbers](https://github.com/hardzeichyksiarhei/mitso-core-js/blob/main/src/02-numbers-tasks.js)
@@ -10,6 +10,7 @@
 - [Promises](https://github.com/hardzeichyksiarhei/mitso-core-js/blob/main/src/07-promises-tasks.js)
 - [Conditions and Loops](https://github.com/hardzeichyksiarhei/mitso-core-js/blob/main/src/08-conditions-n-loops-tasks.js)
 - [Functions and Closures](https://github.com/hardzeichyksiarhei/mitso-core-js/blob/main/src/09-functions-n-closures-tasks.js)
+- [OOP](https://github.com/hardzeichyksiarhei/mitso-core-js/blob/main/src/10-opp-tasks.js)
 
 Настоятельно рекомендуется активное использование **[документации](https://developer.mozilla.org/en-US/)**!
 
