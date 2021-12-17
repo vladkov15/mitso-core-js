@@ -209,8 +209,11 @@
  *             '└──────────┘\n'
  *
  */
-function getRectangleString(/* width, height */) {
-  throw new Error('Not implemented');
+ function getRectangleString( width, height ) {
+  //throw new Error('Not implemented');
+  return '┌' + '─'.repeat(width - 2) + '┐\n' +
+          ('│' + ' '.repeat(width - 2) + '│\n').repeat(height - 2) +
+           '└' + '─'.repeat(width - 2) + '┘\n';  
 }
 
 /**
