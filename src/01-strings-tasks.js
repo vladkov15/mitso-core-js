@@ -145,8 +145,10 @@
  *   '<span>' => 'span'
  *   '<a>' => 'a'
  */
-function unbracketTag(/* str */) {
-  throw new Error('Not implemented');
+ function unbracketTag(str ) {
+  //throw new Error('Not implemented');
+  str = str.replace('<', ""); 
+  return str.replace('>', "")
 }
 
 /**
