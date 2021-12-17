@@ -33,7 +33,7 @@
  *   'b'     => 1
  *   ''      => 0
  */
-function getStringLength(/* value */) {
+ function getStringLength(/* value */) {
   throw new Error('Not implemented');
 }
 
