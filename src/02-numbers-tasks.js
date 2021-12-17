@@ -33,8 +33,8 @@
  *   3.14 => 19.729201864543903
  *   0    => 0
  */
-function getCircleCircumference(/* radius */) {
-  throw new Error('Not implemented');
+ function getCircleCircumference( radius ) {
+  return 2 * Math.PI *radius;
 }
 
 /**
