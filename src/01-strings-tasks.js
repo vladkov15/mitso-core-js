@@ -279,8 +279,27 @@
  *   'Q♠' => 50
  *   'K♠' => 51
  */
-function getCardId(/* value */) {
-  throw new Error('Not implemented');
+ function getCardId(value ) {
+  //throw new Error('Not implemented');
+  let result;
+    
+    switch (value.charAt(0)) {
+        case 'A': result = 1; break;
+        case '1': result = 10; break;
+        case 'J': result = 11; break;
+        case 'Q': result = 12; break;
+        case 'K': result = 13; break;
+        default:  result = value.charAt(0);break;
+    };
+    result = parseInt(result);
+    
+    switch (value.slice(-1)) {
+        case '♣': result -= +1; break;
+        case '♦': result += +12; break;
+        case '♥': result += +25; break;
+        case '♠': result += +38; break;
+    }
+    return  result;
 }
 
 module.exports = {
