@@ -33,7 +33,7 @@
  *   3.14 => 19.729201864543903
  *   0    => 0
  */
- function getCircleCircumference( radius ) {
+function getCircleCircumference( radius ) {
   return 2 * Math.PI *radius;
 }
 
@@ -49,7 +49,7 @@
  *  10, 0  => 5
  *  -3, 3  => 0
  */
- function getAverage( value1, value2 ) {
+function getAverage( value1, value2 ) {
   return value1 / 2 + value2 / 2;
 }
 
@@ -68,7 +68,7 @@
  *   (0,0) (1,0)    => 1
  *   (-5,0) (10,-10) => 18.027756377319946
  */
- function getDistanceBetweenPoints(x1, y1, x2, y2 ) {
+function getDistanceBetweenPoints(x1, y1, x2, y2 ) {
   return Math.hypot(x2-x1, y2-y1);
 }
 
@@ -84,7 +84,7 @@
  *   x + 8 = 0       => -8
  *   5*x = 0         => 0
  */
- function getLinearEquationRoot( a, b ) {
+function getLinearEquationRoot( a, b ) {
   return -b / a;
 }
 
@@ -106,7 +106,7 @@
  *   (0,1) (0,1)     => 0
  *   (0,1) (1,2)     => 0
  */
- function getAngleBetweenVectors( x1, y1, x2, y2 ) {
+function getAngleBetweenVectors( x1, y1, x2, y2 ) {
   return Math.abs(Math.atan2(y2,x2) - Math.atan2(y1, x1));
 }
 
@@ -122,7 +122,7 @@
  *     5     => 5
  *     0     => 0
  */
- function getLastDigit( value ) {
+function getLastDigit( value ) {
   return value.toString().slice(-1);
 }
 
@@ -137,7 +137,7 @@
  *     '37'     => 37
  * '-525.5'     => -525.5
  */
- function parseNumberFromString(value ) {
+function parseNumberFromString(value ) {
   return parseFloat(value);
 }
 
@@ -154,7 +154,7 @@
  *   3,3,3   => 5.196152422706632
  *   1,2,3   => 3.741657386773941
  */
- function getParallelepipedDiagonal( a, b, c ) {
+function getParallelepipedDiagonal( a, b, c ) {
   return Math.sqrt(a * a + b * b + c * c)
 }
 
@@ -175,8 +175,8 @@
  *   1678, 2  => 1700
  *   1678, 3  => 2000
  */
-function roundToPowerOfTen(/* num, pow */) {
-  throw new Error('Not implemented');
+function roundToPowerOfTen( num, pow ) {
+  return Math.round(num / 10**  pow) *  10  ** pow;
 }
 
 /**
@@ -196,8 +196,14 @@ function roundToPowerOfTen(/* num, pow */) {
  *   16 => false
  *   17 => true
  */
-function isPrime(/* n */) {
-  throw new Error('Not implemented');
+function isPrime( n ) {
+  let start = 2;
+  while (start <= Math.sqrt(n)) {
+    if (n % start++ < 1) {
+      return false;
+    }
+  }
+  return n > 1;
 }
 
 /**
@@ -215,8 +221,8 @@ function isPrime(/* n */) {
  *   toNumber(42, 0) => 42
  *   toNumber(new Number(42), 0) => 42
  */
-function toNumber(/* value, def */) {
-  throw new Error('Not implemented');
+function toNumber( value, def ) {
+  return parseFloat(value) || def
 }
 
 module.exports = {
